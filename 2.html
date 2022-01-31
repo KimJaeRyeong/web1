@@ -11,16 +11,20 @@
   
   <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=qqhkqo4hr7"></script>
   
-  <!-- 기본 지도 -->
+ <!-- 마커 -->
 <div id="map" style="width:100%;height:400px;"></div>
 <script>
-  var mapOptions = {
-    center: new naver.maps.LatLng(37.3595704, 127.105399),
-    zoom: 10
-  };
+  var map = new naver.maps.Map('map', {
+    center: new naver.maps.LatLng(35.17982543369992, 129.07499499992576),
+    zoom: 17
+  });
 
-  var map = new naver.maps.Map('map', mapOptions);
+  var marker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(35.17982543369992, 129.07499499992576),
+    map: map
+  });
 </script>
+  
   
   <p>고양시 전체(센터)</p>
   <p>검색 키워드 : 재활 센터, 재활, 센터</p>
