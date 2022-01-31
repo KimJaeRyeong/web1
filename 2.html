@@ -16,6 +16,21 @@
   <img src="https://w.namu.la/s/5aed1de3e76dd5a0fa9185a3523182ecd66873d77fb7261c9cea9398eac1af1423a74a3557dd4679fffa6ca0e16c604c576489cd3b37b9db5a6adcaa65341cb0fefd5481ac0b1659266b99c32f121d610729be447d792aafb27eb0d4475eb27c" width="50%">
   </p><p style="margin-top:45px;">일주일에 한번씩 책읽고 독후감 올리는 곳입니다. 열심히 책을 읽으려고 시작했어요!
   </p>
+  
+  재활센터 지도찾기
+  
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=qqhkqo4hr7"></script>
+  
+  <!-- 기본 지도 -->
+<div id="map" style="width:100%;height:400px;"></div>
+<script>
+  var mapOptions = {
+    center: new naver.maps.LatLng(37.3595704, 127.105399),
+    zoom: 10
+  };
 
+  var map = new naver.maps.Map('map', mapOptions);
+</script>
+  
 </body>
 </html>
